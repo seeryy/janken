@@ -3,13 +3,17 @@ const CHOKI = 1;
 const PA = 2;
 
 let matches = 0;
-function action(oppornent){
+function actionAgainstOmoteUra2(matches){
   matches = matches + 1;
-  const remainder = matches % 3;
-  const isEven = remainder == 0;
-  console.log(`${matches} % 2 = ${remainder} : ${isEven}`);
+  const remainder = matches % 3==0;
+  let result =GU;
   if(isEven){
-  return CHOKI;
+  return result=CHOKI;
 }
-return GU;
+return result;
+}
+
+function action(opponent){
+  let result = actionAgainstOmoteUra2();
+  return result;
 }
