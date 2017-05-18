@@ -15,7 +15,7 @@ function actionAgainstOmoteUra2(){
   const isEven =matches %3 ==0;
   let result =GU;
   if(isEven){
-    return CHOKI;
+    return  CHOKI;
   }
     return result;
 }
@@ -52,18 +52,18 @@ function actionOrder(){
 }
 
 function action(oppornent){
-console.log(opppornent);
+console.log(oppornent);
 
 if (oppornent=='fighter::choki-lover'){
-  result=CHOKIDAISUKIMAN();
+  result=actionAgainstCHOKIDAISUKIMAN();
 }
 else if(oppornent=='fighter::odd-even'){
-  result=actionOmoteUra();
+  result=actionAgainstOmoteUra2();
 }
 else if(oppornent=='fighter::rotation'){
   result=actionOrder();
 }
-
+return result;
 }
 
 
